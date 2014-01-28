@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+# cookbook 'chef-client'
+
+# cookbook 'apache2', '>= 1.0.0'
+cookbook 'apt'
+
+cookbook 'git'
+
+cookbook 'rvm',
+  :git => 'https://github.com/fnichol/chef-rvm'
+
+cookbook 'postgresql',
+  :git => 'http://github.com/hw-cookbooks/postgresql'
+
+cookbook 'nodejs',
+	:git => 'https://github.com/mdxp/nodejs-cookbook'
+
+cookbook 'imagemagick',
+	:git => 'https://github.com/opscode-cookbooks/imagemagick'
+
+cookbook 'sqlite'
+
+cookbook 'build-essential'
